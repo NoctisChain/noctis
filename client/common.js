@@ -1,6 +1,6 @@
 // shared pill nav, footer, CA bar, toasts, formatting
 export const CA = '';
-export const X_URL = 'https://x.com/NoctisRH', GH_URL = 'https://github.com/NoctisChain/noctis';
+export const X_URL = 'https://x.com/NoctisChain', GH_URL = 'https://github.com/NoctisChain/noctis';
 export const $ = (id) => document.getElementById(id), api = (p, d) => fetch(p, d ? { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify(d) } : undefined).then((r) => r.json());
 export const noct = (v) => (Number(v) / 1e6).toLocaleString('en-US', { maximumFractionDigits: 6 });
 export const short = (h, n = 8) => (h ? h.slice(0, n) + '…' + h.slice(-6) : '');

@@ -2,7 +2,7 @@
 'use strict';
 const fs = require('fs'), path = require('path'), { open, sleep } = require('./cdp.cjs');
 const OUT = path.join(__dirname, '..', 'brand'), SRC = path.join(__dirname, 'kit'); fs.mkdirSync(OUT, { recursive: true }); fs.mkdirSync(SRC, { recursive: true });
-const SITE = 'noctischain.org', X = '@NoctisRH';
+const SITE = 'noctischain.org', X = '@NoctisChain';
 const url = (f) => 'file:///' + f.split(path.sep).join('/');
 
 const HEAD = (W, H) => `<!doctype html><html><head><meta charset="utf-8"><link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300..700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><style>

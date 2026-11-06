@@ -28,7 +28,7 @@ const CAP = `(() => { if (document.getElementById('__cap')) return; const d=docu
   await at('#verdict'); await cap('verified on this device · then your browser signs the tip it checked'); await sleep(4000);
   await at('#wt'); await cap('you are now a watchtower · the node only accepts a hash that matches its own block'); await sleep(5500);
   await cap('or run one on a server: node verifier/watch.js'); await sleep(3500);
-  await go('/'); await cap('become a watchtower · noctischain.org/verify · @NoctisRH · <b style="color:#00c805">$NOCT</b>'); await sleep(3600);
+  await go('/'); await cap('become a watchtower · noctischain.org/verify · @NoctisChain · <b style="color:#00c805">$NOCT</b>'); await sleep(3600);
   rec = false; await c.send('Page.stopScreencast'); frames.sort((a, b) => a.t - b.t);
   const verdict = await c.ev(`1`);
   const list = frames.map((x, i) => `file '${x.f.split(path.sep).join('/')}'\nduration ${Math.min(6, Math.max(0.01, ((frames[i + 1] || x).t - x.t) / 1000 || 0.05)).toFixed(3)}`).join('\n') + `\nfile '${frames[frames.length - 1].f.split(path.sep).join('/')}'`;

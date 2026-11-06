@@ -36,7 +36,7 @@ const CAP = `(() => { if (document.getElementById('__cap')) return; const d=docu
   await cap('4 · lattice math: Shor\'s algorithm breaks elliptic curves, not ML-KEM · a saved copy of the chain stays unlinkable'); await sleep(5200);
   await go('/wallet'); await cap('5 · detection: your wallet decapsulates each ciphertext locally · only your ML-KEM secret key opens it');
   await until(`parseFloat(document.getElementById('bal').textContent) >= 25`, 90000); await at('#outs'); await sleep(4200);
-  await go('/'); await cap('noctischain.org · @NoctisRH · <b style="color:#00c805">$NOCT</b>'); await sleep(3200);
+  await go('/'); await cap('noctischain.org · @NoctisChain · <b style="color:#00c805">$NOCT</b>'); await sleep(3200);
   rec = false; await c.send('Page.stopScreencast');
   frames.sort((a, b) => a.t - b.t);
   const list = frames.map((x, i) => `file '${x.f.split(path.sep).join('/')}'\nduration ${Math.min(8, Math.max(0.01, ((frames[i + 1] || x).t - x.t) / 1000 || 0.05)).toFixed(3)}`).join('\n') + `\nfile '${frames[frames.length - 1].f.split(path.sep).join('/')}'`;

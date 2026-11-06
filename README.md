@@ -5,7 +5,7 @@
 [![tests](https://github.com/NoctisChain/noctis/actions/workflows/test.yml/badge.svg)](https://github.com/NoctisChain/noctis/actions/workflows/test.yml)
 
 - Network, explorer, wallet, prover: https://noctischain.org
-- X: [@NoctisRH](https://x.com/NoctisRH)
+- X: [@NoctisChain](https://x.com/NoctisChain)
 - Token: $NOCT on Robinhood Chain
 
 ## What runs today

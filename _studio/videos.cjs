@@ -4,7 +4,7 @@
 const fs = require('fs'), os = require('os'), path = require('path'), { execFileSync } = require('child_process'), { open, sleep } = require('./cdp.cjs');
 const B = path.join(__dirname, '..', 'brand'), K = path.join(__dirname, 'kit'), FPS = 30, url = (f) => 'file:///' + f.split(path.sep).join('/');
 fs.mkdirSync(K, { recursive: true });
-const FOOT = 'noctischain.org · @NoctisRH · <b>$NOCT</b>';
+const FOOT = 'noctischain.org · @NoctisChain · <b>$NOCT</b>';
 const HEAD = `<!doctype html><html><head><meta charset="utf-8"><link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300..700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><style>
 *{margin:0;padding:0;box-sizing:border-box}body{width:1920px;height:1080px;background:#050705;color:#e8f5ea;overflow:hidden;position:relative;font:400 26px 'JetBrains Mono',monospace}
 #cv{position:absolute;left:0;top:0;width:1920px;height:1080px}.s{position:absolute;opacity:0}

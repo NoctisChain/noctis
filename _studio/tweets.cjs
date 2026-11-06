@@ -1,7 +1,7 @@
 // writes brand/X-KIT.md and checks every tweet is ≤245 characters.  node _studio/tweets.cjs
 'use strict';
 const fs = require('fs'), path = require('path'), len = (s) => [...s].length;
-const SITE = 'https://noctischain.org', HANDLE = '@NoctisRH';
+const SITE = 'https://noctischain.org', HANDLE = '@NoctisChain';
 const BIO = 'A private chain mined by proof of proof. Every note hides sender, receiver and amount, and the history is anchored to Robinhood Chain. $NOCT';
 const DEX = 'NOCTIS is a private blockchain mined by proof of proof, the Nockchain model: miners win blocks by proving a 1,024-step computation over the Goldilocks field, and every node checks the proof in milliseconds. 2^32 supply, no premine. Every transaction hides the sender (ring of 16), the receiver (stealth notes) and the amount (Pedersen commitments + range proofs), with ML-KEM-768 quantum-safe addresses. Every 100 blocks the chain writes its block hash to Robinhood Chain. Prove blocks in your browser at noctischain.org/mine.';
 const T = [

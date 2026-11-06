@@ -47,7 +47,7 @@ const CAP = `(() => { if (document.getElementById('__cap')) return; const d=docu
   const h = await c.ev(`fetch('/api/stats').then(r=>r.json()).then(s=>s.height)`);
   await go('/explorer#/block/' + h); await cap('7 · every block carries a proof · re-check it in milliseconds'); await sleep(1800); await click('#vp');
   await until(`/verified|rejected/.test((document.getElementById('pout')||{}).textContent||'')`, 20000); await at('#pout'); await sleep(3400);
-  await go('/'); await cap('noctischain.org · @NoctisRH · <b style="color:#00c805">$NOCT</b>'); await sleep(3800);
+  await go('/'); await cap('noctischain.org · @NoctisChain · <b style="color:#00c805">$NOCT</b>'); await sleep(3800);
   rec = false; await c.send('Page.stopScreencast');
   frames.sort((a, b) => a.t - b.t);
   const list = frames.map((x, i) => `file '${x.f.split(path.sep).join('/')}'\nduration ${Math.min(3, Math.max(0.01, ((frames[i + 1] || x).t - x.t) / 1000 || 0.05)).toFixed(3)}`).join('\n') + `\nfile '${frames[frames.length - 1].f.split(path.sep).join('/')}'`;

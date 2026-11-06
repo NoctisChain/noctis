@@ -27,7 +27,7 @@ const CAP = `(() => { if (document.getElementById('__cap')) return; const d=docu
   await until(`/done|bad/.test(document.getElementById('s3').className)`, 240000); await sleep(1200);
   await at('#verdict'); await cap('verified on this device · open any anchor on the Robinhood Chain explorer'); await sleep(5000);
   await at('#log'); await sleep(3500);
-  await go('/'); await cap('noctischain.org/verify · @NoctisRH · <b style="color:#00c805">$NOCT</b>'); await sleep(3600);
+  await go('/'); await cap('noctischain.org/verify · @NoctisChain · <b style="color:#00c805">$NOCT</b>'); await sleep(3600);
   rec = false; await c.send('Page.stopScreencast'); frames.sort((a, b) => a.t - b.t);
   const verdict = await c.ev(`1`);
   const list = frames.map((x, i) => `file '${x.f.split(path.sep).join('/')}'\nduration ${Math.min(6, Math.max(0.01, ((frames[i + 1] || x).t - x.t) / 1000 || 0.05)).toFixed(3)}`).join('\n') + `\nfile '${frames[frames.length - 1].f.split(path.sep).join('/')}'`;
