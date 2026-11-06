@@ -1,0 +1,39 @@
+{
+  "name": "noctis",
+  "version": "1.0.0",
+  "description": "NOCTIS ($NOCT): a private chain mined by proof of proof (Nockchain-style Goldilocks trace proofs), anchored to Robinhood Chain. Ring signatures, stealth notes, hidden amounts, ML-KEM.",
+  "type": "module",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "test": "node test/crypto.test.js",
+    "test:e2e": "node test/run-e2e.js",
+    "test:light": "node test/light.test.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "BSD-3-Clause",
+  "dependencies": {
+    "@noble/curves": "^1.4.2",
+    "@noble/hashes": "^1.4.0",
+    "@noble/post-quantum": "^0.2.1",
+    "viem": "2.21.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NoctisChain/noctis"
+  },
+  "homepage": "https://noctischain.org",
+  "keywords": [
+    "privacy",
+    "proof-of-proof",
+    "zkpow",
+    "nockchain",
+    "goldilocks",
+    "robinhood-chain",
+    "ml-kem",
+    "ring-signatures",
+    "stealth-addresses"
+  ]
+}

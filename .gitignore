@@ -1,0 +1,7 @@
+node_modules/
+data.json
+data.json.tmp
+*.log
+.env
+_studio/kit/
+verifier/.key
